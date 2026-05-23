@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+#Dikerjakan Zahra Zefania (K3525078)
 class Hewan:
     def __init__(self, nama, jenis):
         self.nama= nama
