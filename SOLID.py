@@ -10,6 +10,6 @@ class Hewan:
     def makan(self):
         pass
     
-class HewanTerbang(Hewan, ABC):
+class GerakHewan(Hewan, ABC):
     def terbang(self):
         pass
