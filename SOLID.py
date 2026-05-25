@@ -9,10 +9,22 @@ class Hewan(ABC):
     @abstractmethod
     def makan(self):
         pass
-    
+        
 class HewanTerbang(Hewan):
     @abstractmethod
     def terbang(self):
         pass
+        
+#Dikerjakan Udzma Fithratun Nufuus (K3525076)
+class Burung(HewanTerbang):
+    def makan(self):
+        print(f"{self.nama} sedang makan biji-bijian.")
+        
+    def terbang(self):
+        print(f"{self.nama} sedang terbang di udara.")
 
+class Ikan(Hewan):
+    def makan(self):
+        print(f"{self.nama} sedang makan pelet ikan.")
+        
 #Dikerjakan Nadia Indah Santika (K3525084)
