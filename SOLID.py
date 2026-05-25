@@ -13,3 +13,5 @@ class Hewan:
 class GerakHewan(Hewan, ABC):
     def terbang(self):
         pass
+
+#Dikerjakan Nadia Indah Santika (K3525084)
