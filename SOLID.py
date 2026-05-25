@@ -17,6 +17,7 @@ class HewanTerbang(Hewan):
         
 #Dikerjakan Udzma Fithratun Nufuus (K3525076)
 class Burung(HewanTerbang):
+    
     def makan(self):
         print(f"{self.nama} sedang makan biji-bijian.")
         
@@ -28,3 +29,15 @@ class Ikan(Hewan):
         print(f"{self.nama} sedang makan pelet ikan.")
         
 #Dikerjakan Nadia Indah Santika (K3525084)
+class Kandang:
+    
+    def __init__(self):
+    self.hewan_list = []
+    
+    def tambah_hewan(self, hewan):
+    self.hewan_list.append(hewan)
+    
+class BersihkanKandang:
+
+    def bersihkan(self):
+        print("Kandang dibersihkan.")
