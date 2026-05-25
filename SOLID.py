@@ -31,7 +31,8 @@ class Ikan(Hewan):
 #Dikerjakan Nadia Indah Santika (K3525084)
 class Kandang:
     
-    def __init__(self):
+    def __init__(self, nama_kandang):
+        self.nama_kandang = nama_kandang
         self.hewan_list = []
     
     def tambah_hewan(self, hewan):
