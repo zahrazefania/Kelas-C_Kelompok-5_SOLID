@@ -32,10 +32,10 @@ class Ikan(Hewan):
 class Kandang:
     
     def __init__(self):
-    self.hewan_list = []
+        self.hewan_list = []
     
     def tambah_hewan(self, hewan):
-    self.hewan_list.append(hewan)
+        self.hewan_list.append(hewan)
     
 class BersihkanKandang:
 
