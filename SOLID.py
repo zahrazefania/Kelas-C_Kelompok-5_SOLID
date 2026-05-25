@@ -41,3 +41,19 @@ class BersihkanKandang:
 
     def bersihkan(self):
         print("Kandang dibersihkan.")
+
+#Dikerjakan Aurrea Daffa Putri Febriana (K3525021)
+class KebunBinatang:
+
+    def __init__(self):
+        self.kandang = Kandang()
+
+    def tambah_hewan(self, hewan):
+        self.kandang.tambah_hewan(hewan)
+
+    def rawat_semua_hewan(self):
+        for hewan in self.kandang.hewan_list:
+            hewan.makan()
+            
+            if isinstance(hewan, HewanTerbang):
+                hewan.terbang()
