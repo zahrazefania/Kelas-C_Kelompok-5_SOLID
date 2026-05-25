@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 #Dikerjakan Zahra Zefania (K3525078)
-class Hewan:
+class Hewan(ABC):
     def __init__(self, nama, jenis):
         self.nama= nama
         self.jenis= jenis
@@ -10,7 +10,8 @@ class Hewan:
     def makan(self):
         pass
     
-class GerakHewan(Hewan, ABC):
+class HewanTerbang(Hewan):
+    @abstractmethod
     def terbang(self):
         pass
 
