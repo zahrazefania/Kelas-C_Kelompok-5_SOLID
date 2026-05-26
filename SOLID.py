@@ -55,9 +55,9 @@ class KebunBinatang:
         for kandang in self.daftar_kandang:
             for hewan in kandang.hewan_list:
                 hewan.makan()
-            if isinstance(hewan, HewanTerbang):
-                hewan.terbang()
-
+                if isinstance(hewan, HewanTerbang):
+                    hewan.terbang()
+#Dikerjakan Galih Satya Prakoa (K3525090)
 burung = Burung("Boni", "Omnivora")
 ikan= Ikan("Goldie", "Herbivora")
 
@@ -66,3 +66,18 @@ kandang_burung.tambah_hewan(burung)
 
 kandang_aquarium = Kandang("Aquarium Utama")
 kandang_aquarium.tambah_hewan(ikan)
+
+zoo = KebunBinatang()
+
+zoo.tambah_kandang(kandang_burung)
+zoo.tambah_kandang(kandang_aquarium)
+
+print("=== RAWAT KEBUN BINATANG ===")
+zoo.rawat_semua_hewan()
+
+print("=== JADWAL KEBERSIHAN ===")
+petugas_kebersihan = BersihkanKandang()
+petugas_kebersihan.bersihkan(kandang_burung)
+petugas_kebersihan.bersihkan(kandang_aquarium)
+
+
