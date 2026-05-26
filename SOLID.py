@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-#Dikerjakan Zahra Zefania (K3525078)
+#Dikerjakan Zahra Ainiyyah Zefania (K3525078)
 class Hewan(ABC):
     def __init__(self, nama, jenis):
         self.nama= nama
@@ -79,5 +79,3 @@ print("=== JADWAL KEBERSIHAN ===")
 petugas_kebersihan = BersihkanKandang()
 petugas_kebersihan.bersihkan(kandang_burung)
 petugas_kebersihan.bersihkan(kandang_aquarium)
-
-
