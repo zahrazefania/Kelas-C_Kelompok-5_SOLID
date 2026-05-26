@@ -57,3 +57,12 @@ class KebunBinatang:
                 hewan.makan()
             if isinstance(hewan, HewanTerbang):
                 hewan.terbang()
+
+burung = Burung("Boni", "Omnivora")
+ikan= Ikan("Goldie", "Herbivora")
+
+kandang_burung = Kandang("Kandang Burung")
+kandang_burung.tambah_hewan(burung)
+
+kandang_aquarium = Kandang("Aquarium Utama")
+kandang_aquarium.tambah_hewan(ikan)
