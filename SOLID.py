@@ -40,8 +40,8 @@ class Kandang:
     
 class BersihkanKandang:
 
-    def bersihkan(self):
-        print("Kandang dibersihkan.")
+    def bersihkan(self, kandang: Kandang):
+        print(f"{kandang.nama_kandang} Telah dibersihkan.")
 
 #Dikerjakan Aurrea Daffa Putri Febriana (K3525021)
 class KebunBinatang:
